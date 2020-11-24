@@ -61,7 +61,7 @@ class SsdNvidia:
                 'NVIDIA/DeepLearningExamples:torchhub',
                 'nvidia_ssd', model_math=self.precision,
                 pretrained=False)
-            ckpt_file = _download_checkpoint(checkpoint_str, force_reload=False)
+            ckpt_file = _download_checkpoint(checkpoint_str, force_reload=True)
             if self.use_cuda:
                 ckpt = torch.load(ckpt_file)
             else:

@@ -27,9 +27,9 @@ import os
 import numpy as np
 import collections
 
-from object_detection import detection_utils as dutils
-from object_detection import generic_model as gmodel
-from utils import *
+from analyze_visual.object_detection import detection_utils as dutils
+from analyze_visual.object_detection import generic_model as gmodel
+from analyze_visual.utils import *
 
 
 generic_model = gmodel.SsdNvidia()
